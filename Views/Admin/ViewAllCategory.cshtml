@@ -1,0 +1,89 @@
+﻿@{
+    ViewBag.Title = "ViewViewAllCategory";
+    Layout = "~/Views/Shared/_Admin_Header.cshtml";
+}
+
+
+@using sem6proj.Models
+
+<body>
+    <div class="ch-container">
+        <div class="row">
+
+            <div id="content" class="col-lg-10 col-sm-10">
+                <!-- content starts -->
+                <div>
+                    <ul class="breadcrumb">
+                        <li>
+                            <a href="/Admin/Dashboard">Home</a>
+                        </li>
+                        <li>
+                            <a href="/Admin/ViewAllCategory">Categories</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="row">
+                    <div class="box col-md-12">
+                        <div class="box-inner">
+                            <div class="box-header well" data-original-title="">
+                                <h2><i class="glyphicon glyphicon-user"></i>Categories</h2>
+
+                            </div>
+                            <div class="box-content">
+                                <table class="table table-striped table-bordered bootstrap-datatable datatable responsive">
+                                    <thead>
+                                        <tr>
+                                            <th>Id</th>
+                                            <th>Name</th>
+                                            <th>Action</th>
+                                             
+                                        </tr>
+                                    </thead>
+                                    @*<tbody>
+
+
+
+                                        @foreach (Category c in Model)
+                                        {
+                                            <tr>
+                                                <td>@c.Id</td>
+                                                <td>@c.name</td>
+                                                 
+
+                                                <td class="center">
+
+                                                    <i class="glyphicon glyphicon-edit icon-white btn btn-default">
+                                                        @Html.ActionLink("Add SubCategory", "Addsubcategory", c)
+                                                    </i>
+                                                    <i class="glyphicon glyphicon-edit icon-white btn btn-default">
+                                                        @Html.ActionLink("View SubCategory", "ViewAllsubcategory", c)
+                                                    </i>
+
+                                                    <i class="glyphicon glyphicon-edit icon-white btn btn-info">
+                                                        @Html.ActionLink("Edit", "EditCategory", c)
+                                                    </i>
+
+                                                    <i class="glyphicon glyphicon-trash icon-white btn btn-danger">
+                                                        @Html.ActionLink("Delete", "DeleteCategory", c )
+                                                    </i>
+                                                    
+                                                </td>
+                                            </tr>
+                                        }
+
+                                    </tbody>*@
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/span-->
+                </div><!--/row-->
+                <!-- content ends -->
+            </div><!--/#content.col-md-0-->
+        </div><!--/fluid-row-->
+
+    </div><!--/.fluid-container-->
+</body>
+
+
+

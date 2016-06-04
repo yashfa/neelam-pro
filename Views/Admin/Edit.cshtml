@@ -1,0 +1,26 @@
+﻿@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit</h2>
+<form action="/Home/EditOK/@Model.Id" method="post">
+     Area :
+    <input type="text" name="name" value="@Model.Area" />
+    <br />
+
+    Marlas_Canals :
+    <input type="text" name="pt" value="@Model.Marlas_Canals" />
+    <br />
+    Noofbedrooms :
+    <input type="text" name="pt" value="@Model.Noofbedrooms" />
+    <br />
+    Noofwashrooms :
+    <input type="text" name="pt" value="@Model.Noofwashrooms" />
+    <br />
+
+    Storeys :
+    <input type="text" name="pt" value="@Model.Storeys" />
+    <br />
+
+    <input type="submit" value="Edit" />
+</form>

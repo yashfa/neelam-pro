@@ -1,0 +1,200 @@
+﻿@{
+    ViewBag.Title = "Addcategory";
+    Layout = "~/Views/Shared/_Admin_Header.cshtml";
+}
+
+<div id="content" class="col-lg-10 col-sm-10">
+    <!-- content starts -->
+    <div>
+        <ul class="breadcrumb">
+            <li>
+                <a href="/Admin/Dashboard">Home</a>
+            </li>
+            <li>
+                <a href="/Admin/Addcategory"> Add Brand</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="row">
+        <div class="box col-md-12">
+            <div class="box-inner">
+                <div class="box-header well" data-original-title="">
+                    <h2><i class="glyphicon glyphicon-edit"></i> Add Design</h2>
+
+                </div>
+                <div class="box-content">
+                    <form method="post" action="/Admin/Addcategory">
+                        <form action="/Admin/Add" method="post">
+
+                            <div class="form-group">
+                                <label>Area in Squarefeet</label>
+                                <input type="text" name="Area" maxlength="6" size="6" placeholder="Enter.."><br>
+
+                            </div>
+                            <div class="form-group">
+
+                                <label>Marlas/Canals </label> &nbsp &nbsp &nbsp
+                                <input type="text" name="Marlas_Canals" maxlength="7" size="7" placeholder="Enter.."><br>
+
+                            </div>
+                            <div class="form-group">
+
+                                <label>Storeys Of House</label> &nbsp
+                                <input type="text" name="Storeys" maxlength="6" size="6" placeholder="Enter.."><br>
+
+                            </div>
+
+                            <div class="form-group">
+
+                                <label>No Of BedRooms</label> &nbsp
+                                <input type="text" name="NoOfBedrooms" maxlength="6" size="6" placeholder="Enter.."><br>
+
+                            </div>
+
+                            <div class="form-group">
+
+                                <label>No Of WashRooms</label> &nbsp
+                                <input type="text" name="NoOfWashromms" maxlength="6" size="6" placeholder="Enter.."><br>
+
+                            </div>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </div>
+                </form>
+
+
+                @*<form action="/Admin/Add" method="post">
+
+                        <input type="text" name="Area" value="567" />
+                        <br />
+
+
+                        <input type="text" name="Marlas_Canals" value="ABC" />
+                        <br />
+
+                        <input type="text" name="Noofbedrooms" value="ABC" />
+                        <br />
+
+                        <input type="text" name="Noofwashrooms" value="ABC" />
+                        <br />
+
+                        <input type="text" name="Storeys" value="ABC" />
+                        <br />
+
+                        <input type="submit" value="Add" />
+                    </form>
+
+
+                    <h2>List of Projects</h2>
+                    <table>
+                        <tr>
+                            <td>Area</td>
+                            <td>Marlas_Canals</td>
+                            <td>Noofbedrooms</td>
+                            <td>Noofwashrooms</td>
+                            <td>Storeys</td>
+
+                        </tr>*@
+
+                @*@foreach (var s in Model)
+                    {
+                        <tr>
+                            <td>@s.Id</td>
+                            <td>@s.Name</td>
+                            <td>@s.ProjectTitle</td>
+
+                            <td>
+                                <a href="/Home/Edit/@s.Id">Edit</a>
+                                <a href="/Home/Delete/@s.Id">Delete</a>
+                            </td>
+                        </tr>
+                    }*@
+                </table>
+
+                @*@Html.Partial("Index")
+
+                    @{
+
+                        if (IsPost)
+                        {
+                            var Area = Request["Area"];
+                            var Marlas_Canals = Request["Marlas_Canals"];
+
+                            var Noofbedrooms = Request["Noofbedrooms"];
+                            var Noofwashrooms = Request["Noofwashrooms"];
+                            var Storeys = Request["Storeys"];
+
+
+                            Response.Redirect("~/Admin/Addcategory");
+
+                        }
+
+
+                    }
+
+                        <div id="content" class="col-lg-10 col-sm-10">
+                            <!-- content starts -->
+                            <div>
+                                <ul class="breadcrumb">
+                                    <li>
+                                        <a href="/Admin/Dashboard">Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="/Admin/Addcategory">Add Design</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="row">
+                                <div class="box col-md-12">
+                                    <div class="box-inner">
+                                        <div class="box-header well" data-original-title="">
+                                            <h2><i class="glyphicon glyphicon-edit"></i> Add Design</h2>
+
+                                        </div>
+                                        <div class="box-content">
+                                            <form method="post" action=  "/Admin/Addcategory1"   >
+                                                <div class="form-group">
+                                                    <label>Area in Squarefeet</label>
+                                                    <input type="text" name="Area" maxlength="6" size="6" placeholder="Enter.."><br>
+
+                                                </div>
+                                                <div class="form-group">
+
+                                                    <label>Marlas/Canals </label> &nbsp &nbsp &nbsp
+                                                    <input type="text" name="Marlas_Canals" maxlength="7" size="7" placeholder="Enter.."><br>
+
+                                                </div>
+                                                <div class="form-group">
+
+                                                    <label>Storeys Of House</label> &nbsp
+                                                    <input type="text" name="Storeys" maxlength="6" size="6" placeholder="Enter.."><br>
+
+                                                </div>
+
+                                                <div class="form-group">
+
+                                                    <label>No Of BedRooms</label> &nbsp
+                                                    <input type="text" name="NoOfBedrooms" maxlength="6" size="6" placeholder="Enter.."><br>
+
+                                                </div>
+
+                                                <div class="form-group">
+
+                                                    <label>No Of WashRooms</label> &nbsp
+                                                    <input type="text" name="NoOfWashromms" maxlength="6" size="6" placeholder="Enter.."><br>
+
+                                                </div>
+                                        </div>
+
+                                        <button type="submit" class="btn btn-default">Submit</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--/span-->
+                        </div><!--/row-->
+                        <!-- content ends -->*@

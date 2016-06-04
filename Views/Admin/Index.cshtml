@@ -1,0 +1,58 @@
+﻿@{
+ViewBag.Title = "Dashboard";
+Layout = "~/Views/Shared/_Admin_Header.cshtml";
+Session["Page"] = "Dashboard";
+}
+ 
+<!DOCTYPE html>
+<html lang="en">
+<body>
+
+    <div class="ch-container">
+        <div class="row">
+
+
+            <div id="content" class="col-lg-10 col-sm-10">
+                <!-- content starts -->
+                <div>
+                    <ul class="breadcrumb">
+                        <li>
+                            <a href="/Admin/Dashboard">Home</a>
+                        </li>
+                        <li>
+                            <a href="/Admin/Dashboard">Dashboard</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class=" row">
+                    <div class="col-md-3 col-sm-3 col-xs-6">
+                        <a data-toggle="tooltip" title="6 new members." class="well top-block" href="#">
+                            <i class="glyphicon glyphicon-user blue"></i>
+
+                            <div>Total Members</div>
+                            <div> </div>
+                        </a>
+                    </div>
+
+                    <div class="col-md-3 col-sm-3 col-xs-6">
+                        <a data-toggle="tooltip" title="4 new pro members." class="well top-block" href="#">
+                            <i class="glyphicon glyphicon-inbox green"></i>
+
+                            <div>Total Products</div>
+                            <div>  </div>
+                        </a>
+                    </div>
+
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,70 @@
+﻿@{
+    ViewBag.Title = "EditBrand";
+    Layout = "~/Views/Shared/_Admin_Header.cshtml";
+}
+
+
+<div id="content" class="col-lg-10 col-sm-10">
+    <!-- content starts -->
+    <div>
+        <ul class="breadcrumb">
+            <li>
+                <a href="/Admin/Dashboard">Home</a>
+            </li>
+            <li>
+                <a href="/Admin/EditBrand"> Add Brand</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="row">
+        <div class="box col-md-12">
+            <div class="box-inner">
+                <div class="box-header well" data-original-title="">
+                    <h2><i class="glyphicon glyphicon-edit"></i> Delete Design</h2>
+
+                </div>
+                <div class="box-content">
+                    <form method="post" action="/Admin/AddBrandindb">
+                        <div class="form-group">
+                            <label>Area in Squarefeet</label>
+                            <input type="text" name="pin" maxlength="6" size="6" placeholder="Enter.."><br>
+
+                        </div>
+                        <div class="form-group">
+
+                            <label>Marlas/Canals </label> &nbsp &nbsp &nbsp
+                            <input type="text" name="pin" maxlength="7" size="7" placeholder="Enter.."><br>
+
+                        </div>
+                        <div class="form-group">
+
+                            <label>Storeys Of House</label> &nbsp
+                            <input type="text" name="pin" maxlength="6" size="6" placeholder="Enter.."><br>
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <label>No Of BedRooms</label> &nbsp
+                            <input type="text" name="pin" maxlength="6" size="6" placeholder="Enter.."><br>
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <label>No Of WashRooms</label>
+                            <input type="text" name="pin" maxlength="6" size="6" placeholder="Enter.."><br>
+
+                        </div>
+
+
+                        <button type="submit" class="btn btn-default">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!--/span-->
+    </div><!--/row-->
+    <!-- content ends -->
